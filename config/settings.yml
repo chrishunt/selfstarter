@@ -20,7 +20,7 @@ product_image_path: "my-product-image.png"
 value_proposition: "Let's get our dodgeball on."
 
 # YouTube or Vimeo Video URL (The embed URL, without the query string options)
-video_embed_url: "http://www.youtube.com/v/HiOAzxmuq80"
+video_embed_url: "http://www.youtube.com/embed/HiOAzxmuq80"
 
 # Amazon settings -- you'll need an Amazon Payments account,
 # sign up here --> http://bit.ly/SGksTv
