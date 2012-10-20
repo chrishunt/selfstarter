@@ -43,8 +43,13 @@
     <div id="reserve_container">
       <p id="ship_date"><%= Settings.ships %></p>
       <a href="/preorder/checkout" class="blue_button reserve"><%= Settings.call_to_action %></a>
-      <p id="price"><%= Settings.price_human %></p>
-      <p><%= Settings.dont_give_them_a_reason_to_say_no %></p>
+      <p id="price">
+        Craft the span.
+      <p>
+        Don't worry. In the event that we don't reach our fundraising goal,
+        your donation will be fully refunded. All donations go to
+        <%= link_to 'charity', 'http://dodgeball.github.com', target: '_blank' %>.
+      </p>
       <%= like_button %>
     </div>
     

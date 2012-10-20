@@ -17,7 +17,7 @@ class Order < ActiveRecord::Base
     @order
   end
 
-  # After authenticating with Amazon, we get the rest of the details
+  # After authenticating with Stripe, we get the rest of the details
   def self.postfill!(options = {})
     @order = Order.find_by_uuid!(options[:callerReference])
     @order.token                = options[:tokenID]
