@@ -50,7 +50,7 @@ middle_reserve_text: "Donate"
 expiration_date: <%= Time.parse('2012/11/8') %>
 
 # Text to show inside the progress bar, when the goal reaches/exceeds 100%
-progress_text: "Game On"
+progress_text: "Game On!"
 
 # Call to action section
 
