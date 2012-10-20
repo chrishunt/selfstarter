@@ -38,6 +38,10 @@ class PreorderController < ApplicationController
     )
 
     redirect_to action: :share, uuid: @order.uuid
+  rescue Stripe::StripeError => e
+    Rails.logger.error e
+    flash[:error] = "There was a problem with your credit card."
+    render :checkout
   end
 
   def postfill

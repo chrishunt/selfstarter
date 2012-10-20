@@ -1,6 +1,9 @@
 <div class="gray_background">
   <div class="wrapper clearfix">
     <div class="main_content">
+      <% if error = flash[:error] %>
+        <p id='error-message'><%= error %></p>
+      <% end %>
       <h3>Let's do this.</h3>
       <p>
         Enter your email and donation below.
