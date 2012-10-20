@@ -10,7 +10,7 @@ class CreateOrders < ActiveRecord::Migration
       t.string  :zip
       t.string  :country
       t.string  :status
-      t.string  :number
+      t.integer :number
       t.string  :uuid
       t.string  :user_id
       t.decimal :price
