@@ -55,7 +55,7 @@ progress_text: "Game On!"
 # Call to action section
 
 # On Lockitron, it's "First Batch Ships in March 2013"
-ships:  "Game day is November 11th."
+ships:  "Battle begins November 11th."
 
 # On Lockitron, it's "Reserve Now"
 call_to_action: "Donate"
