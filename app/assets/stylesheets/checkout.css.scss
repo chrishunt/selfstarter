@@ -1,4 +1,4 @@
-.main_content 
+.main_content
 {
   width: 560px;
   float: left;
@@ -12,14 +12,48 @@
   {
     line-height: 1.5;
   }
-  #checkout
-  {
-    #email
-    {
+  #checkout {
+    #email {
       padding: 15px;
+      width: 345px;
+      outline: none;
+    }
+    #email, #quantity {
       border-radius: 10px;
       border: 1px solid #CCC;
-      width: 350px;
+    }
+    #bullet {
+      margin: 0 auto;
+      position: relative;
+      right: 35px;
+      top: 27px;
+      width: 0;
+      height: 0;
+      border-top: 7px solid #6B6B6B;
+      border-right: 7px solid transparent;
+      border-left: 7px solid transparent;
+      border-radius: 2px;
+      float: right;
+    }
+    #quantity {
+      -webkit-appearance: button;
+      moz-appearance: button;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      color: #6B6B6B;
+      text-shadow: 0 1px 0px white;
+      -webkit-font-smoothing: antialiased;
+      font-size: 22px;
+      margin: 0;
+      margin-left: 5px;
+      overflow: hidden;
+      padding: 5px;
+      padding-top: 6px;
+      padding-left: 17px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      height: 60px;
+      width: 150px;
       outline: none;
     }
     .invalid
