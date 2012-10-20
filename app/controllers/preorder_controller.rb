@@ -9,17 +9,17 @@ class PreorderController < ApplicationController
 
   def prefill
     @email    = params[:email]
-    @quantity = params[:quantity]
+    @quantity = params[:quantity].to_i
     token     = params[:stripeToken]
 
-    unless @email && @quantity && token
+    if token.nil? || (@quantity < 1)
       render :checkout
       return
     end
 
-    user = User.find_or_create_by_email!(params[:email])
+    user = User.find_or_create_by_email!(@email)
 
-    @quantity.to_i.times do
+    @quantity.times do
       @order = Order.prefill!(
         name:    Settings.product_name,
         price:   Settings.price,
@@ -28,7 +28,7 @@ class PreorderController < ApplicationController
     end
 
     # Amount in cents
-    amount = Settings.price * 100 * @quantity.to_i
+    amount = Settings.price * 100 * @quantity
 
     Stripe::Charge.create(
       amount:      amount,
