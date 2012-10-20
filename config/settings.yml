@@ -47,7 +47,7 @@ primary_stat_verb: 'backer'
 middle_reserve_text: "Donate"
 
 # When the project should end
-expiration_date: <%= Time.parse('2012/11/8') %>
+expiration_date: <%= Time.parse('2012/11/9') %>
 
 # Text to show inside the progress bar, when the goal reaches/exceeds 100%
 progress_text: "Game On!"
@@ -55,7 +55,7 @@ progress_text: "Game On!"
 # Call to action section
 
 # On Lockitron, it's "First Batch Ships in March 2013"
-ships:  "Game day is November 11th"
+ships:  "Game day is November 11th."
 
 # On Lockitron, it's "Reserve Now"
 call_to_action: "Donate"
