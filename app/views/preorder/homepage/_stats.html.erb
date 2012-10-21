@@ -6,7 +6,7 @@
   <div id="backing">
     <ul>
       <li class="stats" id="backers">
-        <%= number_with_delimiter Order.current, :delimiter => "," %>
+        <%= number_with_delimiter User.count, :delimiter => "," %>
         <span><%= Settings.primary_stat %></span>
       </li>
       <li class="stats">
