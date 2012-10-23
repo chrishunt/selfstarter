@@ -7,6 +7,9 @@ class PreorderController < ApplicationController
   def checkout
   end
 
+  def thanks
+  end
+
   def prefill
     @email    = params[:email]
     @quantity = params[:quantity].to_i
